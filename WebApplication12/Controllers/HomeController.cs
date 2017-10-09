@@ -13,6 +13,16 @@ namespace WebApplication12.Controllers
             return View();
         }
 
+        public ActionResult ChangeText()
+        {
+            return PartialView("Test", DateTime.Now.ToString());
+        }
+
+        public ActionResult ChangeText2()
+        {
+            return PartialView("Test2", DateTime.Now.ToString());
+        }
+
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
